@@ -30,4 +30,4 @@ class LoginResource(Resource):
         
         login_user(user)
         
-        return {'message': f'Welcome back, {username}!'}, 200
+        return {'message': f'Welcome back, {username}!', 'user': user.username}, 200

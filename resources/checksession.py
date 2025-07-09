@@ -6,4 +6,4 @@ class CheckSessionResource(Resource):
         if current_user.is_authenticated:
             return {'authenticated': True, 'username': current_user.username}, 200
         else:
-            return {'authencicated': False}, 401
+            return {'authenticated': False}, 401

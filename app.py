@@ -16,6 +16,8 @@ def create_app():
     app = Flask(__name__)
 
     CORS(app, supports_credentials=True, origins=['https://movie-finder-eight-plum.vercel.app'])
+    # CORS(app, supports_credentials=True, origins=['http://localhost:3000'])
+
 
     app.config['SECRET_KEY'] = 'secret_key'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
